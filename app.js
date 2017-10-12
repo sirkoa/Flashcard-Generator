@@ -5,21 +5,21 @@ var firstPresident = new BasicCard(
     "Who was the first president of the United States?", "George Washington");
 
 // "Who was the first president of the United States?"
-console.log("1 " + firstPresident.front); 
+console.log(firstPresident.front); 
 
 // "George Washington"
-console.log("2 " + firstPresident.back); 
+console.log(firstPresident.back); 
 
 var firstPresidentCloze = new ClozeCard(
     "George Washington was the first president of the United States.", "George Washington");
-console.log("3 " + firstPresidentCloze);
+console.log(firstPresidentCloze);
 
 firstPresidentCloze.removeCloze();
 // "George Washington"
-console.log("4 " + firstPresidentCloze.cloze); 
+console.log(firstPresidentCloze.cloze); 
 
 // " ... was the first president of the United States.
-console.log("5 " + firstPresidentCloze.clozedText); 
+console.log(firstPresidentCloze.clozedText); 
 
 // "George Washington was the first president of the United States.
 
