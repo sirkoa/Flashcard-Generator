@@ -3,8 +3,8 @@ function ClozeCard (text, cloze){
 	this.cloze = cloze;
 	this.clozedText;
 
-	this.removeCloze = function(text,cloze){
-		var splitArr = text.split(cloze);
+	this.removeCloze = function(){
+		var splitArr = this.text.split(this.cloze);
 		this.clozedText = splitArr;
 		console.log(splitArr);
 		this.clozedText = splitArr[0] + "..." + splitArr[1];
